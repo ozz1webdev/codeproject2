@@ -1,0 +1,21 @@
+html {
+    background-color: black;
+}
+#startPage { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200;
+    height:500;
+    background-image: linear-gradient(to right,rgb(175,51,49),rgb(65,187,165));
+}
