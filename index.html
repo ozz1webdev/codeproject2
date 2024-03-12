@@ -8,14 +8,16 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/gameScreenStyle.css" rel="stylesheet">
 </head>
-<body onload="screenRotate()">
+<body onload="onStart()">
     <!-- Start Page -->
     <section id="startPage">
         <div id="mainMenu" class="menu">
             <h1>Escape the Room Game</h1>
             <p>Welcome to 'Escape the room' game. Find the key and escape the room</p>
             <button id="startBtn" onclick="startGame()">Play</button>
+            <button id="btnFullScreen">Fullscreen</button>
         </div>
+        <div id="turnMsg"><h1>Please rotate your device</h1></div>
     </section>
     <!-- Game Screen-->
     <section id="gameScreen">
@@ -23,6 +25,7 @@
     </section>
 
     <footer>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
         <script src="./assets/js/myScript.js"></script>
     </footer>
 </body>

@@ -52,3 +52,22 @@
     height: 100vh;
     background-color: azure;
 }
+@media only screen and (orientation: portrait) {
+    #turnMsg {
+        display: block;
+    }
+    body {
+        height: 100vh;
+    }
+    .menu {
+        display:none;
+    }
+}
+@media only screen and (orientation: landscape) {
+    #turnMsg {
+        display: none;
+    }
+    .menu {
+        display:flex;
+    }
+}
