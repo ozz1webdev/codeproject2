@@ -1,13 +1,10 @@
-html {
-    background-color: black;
-}
 #startPage { 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: azure;
+    background-color: rgb(13, 90, 90);
 }
 
 .menu {
@@ -18,9 +15,10 @@ html {
     width:200;
     height:500;
     border: 1px solid white;
-    border-radius: 50px 0px;
+    border-radius: 20px 0px;
     background-image: linear-gradient(to right,rgb(46, 126, 158),rgb(5, 60, 77));
     box-shadow: black 10px 10px 10px;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, transparent 20%, rgba(0,0,0,0.4));
 }
 .menu h1 {
     color:silver;
