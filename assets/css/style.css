@@ -68,6 +68,12 @@ nav span {
     background-image:url(../media/images/slot1.png);
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
+}
+.homeSlot1:hover {
+    transition:all 5ms ease; 
+    width:150px;
+    height:180px; 
 }
 .homeSlot2 {
     width:120px;
@@ -75,6 +81,12 @@ nav span {
     background-image:url(../media/images/slot2.png);
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
+}
+.homeSlot2:hover {
+    transition:all 5ms ease; 
+    width:150px;
+    height:180px; 
 }
 .homeSlot3 {
     width:120px;
@@ -82,4 +94,10 @@ nav span {
     background-image:url(../media/images/slot3.png);
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
+}
+.homeSlot3:hover {
+    transition:all 5ms ease; 
+    width:150px;
+    height:180px; 
 }
