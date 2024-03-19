@@ -13,12 +13,10 @@
 <body>
     <nav>
         <span>Start Page</span>
-        <span>About</span>
-        <span>Contact</span>
+        <span>Balance :</span>
+        <span id="balance">20 Coins</span>
     </nav>
-    <audio autoplay>
-        <source src="./assets/media/Sounds/casino-ambiance-19130.mp3" type="audio/mpeg">
-    </audio>
+    
     <section id="homePage">
         <img src="./assets/media/videos/casino-sign.gif" alt="Casino Sign">
         <h1>Welcome To Bill's Slots</h1>
@@ -32,7 +30,7 @@
     </section>
     <section id="slot1" class="slot1">
         <div id="slot1Theme">
-            <div class="reel-container">
+            <div class="reel-container" onclick="rollAll()">
                 <div class="reel"></div>
                 <div class="reel"></div>
                 <div class="reel"></div>

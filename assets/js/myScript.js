@@ -1,6 +1,6 @@
-// Width of the icons
+// Width of the icons 79
 icon_width = 79,	
-// Height of one icon in the strip
+// Height of one icon in the strip 79
 icon_height = 79,	
 // Number of icons in the strip
 num_icons = 9,	
@@ -69,7 +69,10 @@ function rollAll() {
 			// Win conditions
 			if (indexes[0] == indexes[1] || indexes[1] == indexes[2]) {
 				const winCls = indexes[0] == indexes[2] ? "win2" : "win1";
-				alert("win");
+				setBalance('win');
+			}
+			else {
+				setBalance('lose');
 			}
 		
 			
