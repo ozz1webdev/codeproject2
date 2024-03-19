@@ -63,22 +63,22 @@ nav span {
     gap:20px;
 }
 .homeSlot1 {
-    width:100px;
-    height:130px;
+    width:120px;
+    height:150px;
     background-image:url(../media/images/slot1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .homeSlot2 {
-    width:100px;
-    height:130px;
+    width:120px;
+    height:150px;
     background-image:url(../media/images/slot2.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .homeSlot3 {
-    width:100px;
-    height:130px;
+    width:120px;
+    height:150px;
     background-image:url(../media/images/slot3.png);
     background-repeat: no-repeat;
     background-size: contain;
