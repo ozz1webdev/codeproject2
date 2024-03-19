@@ -4,7 +4,4 @@ function startSlot1() {
 
     startpage.style.display = "none";
     slot1Container.style.display = "flex";
-    slot1Container.style.zIndex = 2;
-    slot1Container.style.height = "100%";
-    slot1Container.style.transition = "all 5s ease";
 }
