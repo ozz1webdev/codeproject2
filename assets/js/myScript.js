@@ -53,9 +53,9 @@ const roll = (reel, offset = 0) => {
  * Roll all reels, when promise resolves roll again
  */
 function rollAll() {
-	
+	const click = document.getElementById('slot1Theme');
 	const reelsList = document.querySelectorAll('.reel-container > .reel');
-	
+	click.onclick = false;
 	Promise
 		
 		// Activate each reel, must convert NodeList to Array for this with spread operator
@@ -77,6 +77,8 @@ function rollAll() {
 		
 			
 		});
+		
+
 };
 
 // 

@@ -12,9 +12,15 @@
 </head>
 <body>
     <nav>
-        <span>Start Page</span>
-        <span>Balance :</span>
-        <span id="balance">20 Coins</span>
+        <span onclick="startPage()">Start Page</span>
+        <div class="balanceContainer">
+            <span id="balance">Balance : 20 Coins</span>
+            <span id="bet">Bet : 1 Coin</span>
+        </div>
+        <div class="betButtons">
+            <button onclick="incBet()">+</button>
+            <button onclick="decBet()">-</button>
+        </div>
     </nav>
     
     <section id="homePage">
@@ -29,8 +35,8 @@
         </div>
     </section>
     <section id="slot1" class="slot1">
-        <div id="slot1Theme">
-            <div class="reel-container" onclick="rollAll()">
+        <div id="slot1Theme" onclick="rollAll()">
+            <div class="reel-container">
                 <div class="reel"></div>
                 <div class="reel"></div>
                 <div class="reel"></div>
@@ -45,7 +51,7 @@
     </section>
         
     <footer>
-        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        
         <script src="./assets/js/myScript.js"></script>
         <script src="./assets/js/slot1.js"></script>
     </footer>
