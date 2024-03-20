@@ -21,7 +21,7 @@ function setBalance(status) {
     if (status == 'win') {
         sum = sum + bet;
         balance.innerText = 'Balance : ' + sum + coins;
-    }
+    } 
     else if (status == 'lose') {
         sum = sum - bet;
         balance.innerText = 'Balance : ' + sum + coins;
