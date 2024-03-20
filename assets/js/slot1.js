@@ -1,24 +1,52 @@
+var startpage = document.getElementById('homePage');
+var slot1Container = document.getElementById('slot1');
+var slot2Container = document.getElementById('slot2');
+var slot3Container = document.getElementById('slot3');
+var reelContainer = document.getElementById('reel-container');
+
+var sum = 20;
+var bet = 1;
+var coins = 'Coin';
+
 function startPage() {
-    let startpage = document.getElementById('homePage');
-    let slot1Container = document.getElementById('slot1');
-    let slot2Container = document.getElementById('slot2');
-    let slot3Container = document.getElementById('slot3');
 
     startpage.style.display = "flex";
+    reelContainer.style.display = "none";
     slot1Container.style.display = "none";
     slot2Container.style.display = "none";
     slot3Container.style.display = "none";    
 }
 function startSlot1() {
-    let slot1Container = document.getElementById('slot1');
-    let startpage = document.getElementById('homePage');
 
     startpage.style.display = "none";
     slot1Container.style.display = "flex";
+    slot2Container.style.display = "none";
+    slot3Container.style.display = "none";
+    reelContainer.style.display = "flex";
+    reelContainer.style.marginLeft = "260px";
+    reelContainer.style.marginTop = "420px";
+
 }
-var sum = 20;
-var bet = 1;
-var coins = 'Coin';
+function startSlot2() {
+    startpage.style.display = "none";
+    slot1Container.style.display = "none";
+    slot2Container.style.display = "flex";
+    slot3Container.style.display = "none";
+    reelContainer.style.display = "flex";
+    reelContainer.style.marginLeft = "240px";
+    reelContainer.style.marginTop = "380px";
+
+}
+function startSlot3() {
+    startpage.style.display = "none";
+    slot1Container.style.display = "none";
+    slot2Container.style.display = "none";
+    slot3Container.style.display = "flex";
+    reelContainer.style.display = "flex";
+    reelContainer.style.marginLeft = "270px";
+    reelContainer.style.marginTop = "400px";
+}
+
 function setBalance(status) {
     let balance = document.getElementById('balance')
     let betLabel = document.getElementById('bet')

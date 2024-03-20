@@ -22,26 +22,7 @@
     background-size: contain;
     z-index: 2;
 }
-.slot2 .reel-container {
-    position:fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-left:70px;
-    margin-top:300px;
-    gap:30px;
-    width: 300px;
-    height:140px;
-    overflow: hidden;
-}
-.slot2  reel-container  reel {
-    width:79px;
-    height:237px;
-    background-image: url(../media/images/reel.jpg);
-    background-repeat: repeat-y;
-    background-position: 0 0px;
-    background-size: cover;
-}
+
 @media screen and (max-width: 600px) {
     #slot2Theme {
         display:flex;
@@ -55,26 +36,4 @@
         background-size: contain;
         z-index: 2;
     } 
-    .slot2  .reel-container {
-        position:fixed;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin-left:0px;
-        margin-top:200px;
-        gap:10px;
-        width: 300px;
-        height:140px;
-        overflow: hidden;
-    }
-    .slot2Theme  .reel-container  .reel {
-        width:79px;
-        height:237;
-        background-image: url(../media/images/reel.jpg);
-        background-repeat: repeat-y;
-        background-position: 0 0px;
-        background-size: cover;
-        z-index:2;
-    }
-    
 }
