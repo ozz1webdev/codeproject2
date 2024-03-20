@@ -3,6 +3,10 @@ var slot1Container = document.getElementById('slot1');
 var slot2Container = document.getElementById('slot2');
 var slot3Container = document.getElementById('slot3');
 var reelContainer = document.getElementById('reel-container');
+var slot1Theme = document.getElementById('slot1Theme');
+var slot2Theme = document.getElementById('slot2Theme');
+var slot3Theme = document.getElementById('slot3Theme');
+const screenWidth = window.screen.width;
 
 var sum = 20;
 var bet = 1;
@@ -18,33 +22,78 @@ function startPage() {
 }
 function startSlot1() {
 
+    if( screenWidth <= 768) {
+        reelContainer.style.marginLeft = "11px";
+        reelContainer.style.marginTop = "198px";
+        reelContainer.style.gap = "8px";    
+    } 
+    else if (screenWidth >= 768){
+        
+        reelContainer.style.marginLeft = "55px";
+        reelContainer.style.marginTop = "271px";
+        reelContainer.style.gap = "8px";
+    }
+
     startpage.style.display = "none";
     slot1Container.style.display = "flex";
     slot2Container.style.display = "none";
     slot3Container.style.display = "none";
     reelContainer.style.display = "flex";
-    reelContainer.style.marginLeft = "260px";
-    reelContainer.style.marginTop = "420px";
 
+    slot1Container.style.zIndex = "2";
+    reelContainer.style.zIndex = "1";
+    slot1Theme.append(reelContainer);
+    reelContainer.style.position = "relative";
 }
 function startSlot2() {
+
+    if( screenWidth <= 768) {
+        reelContainer.style.marginLeft = "11px";
+        reelContainer.style.marginTop = "198px";
+        reelContainer.style.gap = "8px";    
+    } 
+    else if (screenWidth >= 768){
+        
+        reelContainer.style.marginLeft = "35px";
+        reelContainer.style.marginTop = "230px";
+        reelContainer.style.gap = "8px";
+    }
+
+
     startpage.style.display = "none";
     slot1Container.style.display = "none";
     slot2Container.style.display = "flex";
     slot3Container.style.display = "none";
     reelContainer.style.display = "flex";
-    reelContainer.style.marginLeft = "240px";
-    reelContainer.style.marginTop = "380px";
+
+    slot2Theme.append(reelContainer);
+    reelContainer.style.position = "absolute";
 
 }
 function startSlot3() {
+
+    if( screenWidth <= 768) {
+        reelContainer.style.marginLeft = "11px";
+        reelContainer.style.marginTop = "198px";
+        reelContainer.style.gap = "8px";    
+    } 
+    else if (screenWidth >= 768){
+        
+        reelContainer.style.marginLeft = "65px";
+        reelContainer.style.marginTop = "267px";
+        reelContainer.style.gap = "18px";
+    }
+
+
     startpage.style.display = "none";
     slot1Container.style.display = "none";
     slot2Container.style.display = "none";
     slot3Container.style.display = "flex";
     reelContainer.style.display = "flex";
-    reelContainer.style.marginLeft = "270px";
-    reelContainer.style.marginTop = "400px";
+
+    slot3Theme.append(reelContainer);
+    reelContainer.style.position = "absolute";
+    
 }
 
 function setBalance(status) {
