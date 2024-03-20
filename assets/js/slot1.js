@@ -17,10 +17,13 @@ var coins = 'Coin';
 function setBalance(status) {
     let balance = document.getElementById('balance')
     let betLabel = document.getElementById('bet')
+    let sound = new Audio('../assets/media/Sounds/win.mp3');
+	
 
     if (status == 'win') {
         sum = sum + bet;
         balance.innerText = 'Balance : ' + sum + coins;
+        sound.play();
     } 
     else if (status == 'lose') {
         sum = sum - bet;
@@ -38,12 +41,14 @@ function setBalance(status) {
 
 function incBet () {
     let betLabel = document.getElementById('bet')
+    let sound = new Audio('../assets/media/Sounds/coin.mp3');
 
     bet += 1;
     if (bet > sum) {
         bet = sum;
     }
     let coins = bet < 2 ? 'Coin' : 'Coins';
+    sound.play();
     betLabel.innerText = 'Bet : ' + bet + ' ' + coins;
 }
 function decBet () {
