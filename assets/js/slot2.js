@@ -1,14 +1,6 @@
-function startPage() {
-    let startpage = document.getElementById('homePage');
-    let slot1Container = document.getElementById('slot1');
-    let slot2Container = document.getElementById('slot2');
 
-    startpage.style.display = "flex";
-    slot1Container.style.display = "none";
-    slot2Container.style.display = "none";
-}
-function startSlot1() {
-    let slot1Container = document.getElementById('slot1');
+function startSlot2() {
+    let slot1Container = document.getElementById('slot2');
     let startpage = document.getElementById('homePage');
 
     startpage.style.display = "none";
@@ -64,5 +56,5 @@ function decBet () {
         }
         let coins = bet < 2 ? 'Coin' : 'Coins';
         betLabel.innerText = 'Bet : ' + bet + ' ' +coins;
-    }
+}
 }
