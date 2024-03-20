@@ -46,8 +46,11 @@ function rollAll() {
 			deltas.forEach((delta, i) => indexes[i] = (indexes[i] + delta)%num_icons);
 		
 			if (indexes[0] == indexes[1] || indexes[1] == indexes[2]) {
-				const winCls = indexes[0] == indexes[2] ? "win2" : "win1";
+				//const winCls = indexes[0] == indexes[2] ? "win2" : "win1";
 				setBalance('win');
+			}
+			else if (indexes[0] == indexes[1] && indexes[1] == indexes[2]) {
+				setBalance('3win');
 			}
 			else {
 				setBalance('lose');
