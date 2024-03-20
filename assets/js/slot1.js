@@ -59,7 +59,6 @@ function startSlot2() {
         reelContainer.style.gap = "8px";
     }
 
-
     startpage.style.display = "none";
     slot1Container.style.display = "none";
     slot2Container.style.display = "flex";
@@ -104,20 +103,23 @@ function setBalance(status) {
 
     if (status == 'win') {
         sum = sum + bet;
-        balance.innerText = 'Balance : ' + sum + coins;
+        balance.innerText = 'Balance : ' + sum + ' ' +coins;
         sound.play();
     } 
     else if (status == 'lose') {
         sum = sum - bet;
-        balance.innerText = 'Balance : ' + sum + coins;
+        balance.innerText = 'Balance : ' + sum + ' ' +coins;
     }
-    
+    if (bet > sum) {
+        bet = sum;
+        betLabel.innerText = 'Bet : ' + bet + ' Coins';
+    }
     if (sum <= 0) {
         sum = 0;
         bet = 0;
         balance.innerText = 'Balance : ' + sum + ' Coins';
         betLabel.innerText = 'Bet : ' + bet + ' Coins';
-        alert("Balance is 0. Game Over! Please refresh the page to play again");
+        alert("Balance is 0. Game Over! Please refresh the page to play again or set a bet");
     }
 }
 
@@ -126,7 +128,10 @@ function incBet () {
     let sound = new Audio('../assets/media/Sounds/coin.mp3');
 
     bet += 1;
-    if (bet > sum) {
+    if (sum >= 3 && bet > 3) {
+        bet = 3;
+    }
+    else if (sum < 3 && bet > 3) {
         bet = sum;
     }
     let coins = bet < 2 ? 'Coin' : 'Coins';
