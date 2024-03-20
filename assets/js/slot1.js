@@ -2,10 +2,12 @@ function startPage() {
     let startpage = document.getElementById('homePage');
     let slot1Container = document.getElementById('slot1');
     let slot2Container = document.getElementById('slot2');
+    let slot3Container = document.getElementById('slot3');
 
     startpage.style.display = "flex";
     slot1Container.style.display = "none";
     slot2Container.style.display = "none";
+    slot3Container.style.display = "none";    
 }
 function startSlot1() {
     let slot1Container = document.getElementById('slot1');
