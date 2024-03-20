@@ -102,11 +102,19 @@ function setBalance(status) {
 	
 
     if (status == 'win') {
+        slot1Theme.attributes.onclick.value ="rollAll()";
+        slot2Theme.attributes.onclick.value ="rollAll()";
+        slot3Theme.attributes.onclick.value ="rollAll()";
+
         sum = sum + bet;
         balance.innerText = 'Balance : ' + sum + ' ' +coins;
         sound.play();
     } 
     else if (status == 'lose') {
+        slot1Theme.attributes.onclick.value ="rollAll()";
+        slot2Theme.attributes.onclick.value ="rollAll()";
+        slot3Theme.attributes.onclick.value ="rollAll()";
+
         sum = sum - bet;
         balance.innerText = 'Balance : ' + sum + ' ' +coins;
     }

@@ -31,6 +31,10 @@ const roll = (reel, offset = 0) => {
 
 
 function rollAll() {
+	slot1Theme.onclick = "";
+	slot2Theme.onclick = "";
+	slot3Theme.onclick = "";
+
 	const reelsList = document.querySelectorAll('.reel-container > .reel');
 	let sound = new Audio('../assets/media/Sounds/reel.mp3');
 	sound.play();
