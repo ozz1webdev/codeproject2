@@ -29,6 +29,9 @@ nav {
     margin: 0;
     padding: 0;
 }
+#menuHomePage {
+    cursor: pointer;
+}
 .balanceContainer {
     display:flex;
     flex-direction: column;
