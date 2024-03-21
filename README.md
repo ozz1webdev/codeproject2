@@ -55,7 +55,7 @@ Wireframes were created for mobile and desktop.
 
 ### Features
 
-The website is comprised of four pages, three of which are accessible from the Pictures Selector (Slot1,Slot2,Slot3). The Start page only for the menu.
+The website is comprised of four pages, three of which are accessible from the Pictures Selector (Slot1,Slot2,Slot3). The Start page only from the menu.
 
 * All Pages on the website have:
 
@@ -153,7 +153,7 @@ To clone the Bill's Slots repository:
 
 ![Index Page HTML](assets/readme/lighthouse.jpg)
 
-##Credits
+## Credits
 
 ### Media
 
