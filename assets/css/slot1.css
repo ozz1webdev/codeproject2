@@ -48,7 +48,7 @@
 @media screen and (max-width: 768px) {
     #slot1Theme {
         display:flex;
-        position:elative;
+        position:relative;
         width: 374px;
         height: 689px;
         margin-left: 0px;
@@ -73,7 +73,7 @@
     }
     .reel {
         width:79px;
-        height:237;
+        height:237px;
         background-image: url(../media/images/reel.jpg);
         background-repeat: repeat-y;
         background-position: 0 0px;
