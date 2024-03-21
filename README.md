@@ -1,4 +1,4 @@
-#Bill's Slots Games Website
+# Bill's Slots Games Website
 
 <p>Bill's Slots mashines Website is a simple Classic Slots games. Created for Code Institute Project2</p>
 
