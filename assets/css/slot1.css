@@ -1,3 +1,5 @@
+/********************SLOT 1 STYLES ********************/
+
 .slot1 {
     transition:all 3s ease;
     position:relative;
@@ -45,6 +47,7 @@
     background-size: cover;
     z-index: 1;
 }
+/********************MEDIA QUERIES 768px*********************/
 @media screen and (max-width: 768px) {
     #slot1Theme {
         display:flex;

@@ -1,3 +1,5 @@
+/********************SLOT 3 STYLES ********************/
+
 .slot3 {
     transition:all 3s ease;
     position:relative;
@@ -22,7 +24,7 @@
     background-size: contain;
     z-index: 2;
 }
-
+/**************MEDIA QUERIES 600px ********************/
 @media screen and (max-width: 600px) {
     #slot3Theme {
         display:flex;

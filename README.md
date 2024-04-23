@@ -154,7 +154,8 @@ To clone the Bill's Slots repository:
 ![Index Page HTML](assets/readme/lighthouse.jpg)
 
 ## Credits
-
+* Thanks Jos Fabre for the Tutorial and the Reel Icons (https://codepen.io/josfabre/pen/abReBvP)
+* 
 ### Media
 
  * The Images and Sounds- https://pixabay.com

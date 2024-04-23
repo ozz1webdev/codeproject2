@@ -32,12 +32,14 @@ nav {
 #menuHomePage {
     cursor: pointer;
 }
+/* Balance Container */
 .balanceContainer {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/* Bet inc dec Buttons */
 .betButtons {
     display:flex;
     flex-direction: column;
@@ -52,6 +54,8 @@ nav {
     font-size: 20px;
     font-family: sans-serif;
 }
+
+/* Home Page */
 #homePage {
     display:flex;
     flex-direction: column;
@@ -70,6 +74,8 @@ nav {
     width: 200px;
     height: 100px;
 }
+
+/* Slots Container */
 #reel-container {
     display:none;
 }

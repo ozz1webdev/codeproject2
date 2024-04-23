@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bill's Slots</title>
 
+    <!-- Linking CSS Files -->
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/slot1.css" rel="stylesheet">
     <link href="./assets/css/slot2.css" rel="stylesheet">
     <link href="./assets/css/slot3.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Nav Bar -->
     <nav>
         <span id="menuHomePage" onclick="startPage()">Main Page</span>
         <div class="balanceContainer">
@@ -22,11 +24,19 @@
             <button onclick="decBet()">-</button>
         </div>
     </nav>
-    
+    <!---- Home Page -->
     <section id="homePage">
+        <div style="display: flex; flex-direction: column; text-align: center;">
+            <h1>Welcome To Bill's Slots</h1>
+            <h2>How to Play</h2>
+            <p>Select a Slot Mashine to start the Game and place your bet.<br>
+                You can Bet a maximum of 3 Coins and a minimum of 1 Coin.<br>
+                If you hit 2 or 3 identical icons in a row, you win the amount you have bet.<br>
+                If you lose your coins, either continue betting coins and try again or restart the page to start over.</p>
+        </div>
         <img src="./assets/media/videos/casino-sign.gif" alt="Casino Sign">
-        <h1>Welcome To Bill's Slots</h1>
-        <p>Please Select a Slot Mashine to play</p>
+        <p>Please Select a Slot Mashine to play with</p>
+        <!-- Slots Container -->
         <div class="slotsContainer">
             <div class="homeSlot1" onclick=(startSlot1())></div>
             <div class="homeSlot2" onclick=(startSlot2())></div>
@@ -52,7 +62,7 @@
     </section>
         
     <footer>
-        
+        <!-- Linking Javascript Files -->
         <script src="./assets/js/myScript.js"></script>
         <script src="./assets/js/slot1.js"></script>
     </footer>
