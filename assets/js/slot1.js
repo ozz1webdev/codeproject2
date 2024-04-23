@@ -150,7 +150,7 @@ function setBalance(status) {
     let betLabel = document.getElementById('bet');
     
     // Create a new audio element with the appropriate sound file
-    let sound = new Audio('../assets/media/Sounds/win.mp3');
+    let sound = new Audio('https://github.com/ozz1webdev/codeproject2/blob/main/assets/media/Sounds/win.mp3?raw=true');
     
     // Depending on the status of the game, update the balance and sound
     if (status == 'win') {
@@ -204,7 +204,7 @@ function setBalance(status) {
 function incBet () {
     // Get the bet label element and create a new audio element
     let betLabel = document.getElementById('bet');
-    let sound = new Audio('../assets/media/Sounds/coin.mp3');
+    let sound = new Audio('https://github.com/ozz1webdev/codeproject2/blob/main/assets/media/Sounds/coin.mp3?raw=true');
 
     // Increase the bet by 1
     bet += 1;

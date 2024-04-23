@@ -58,7 +58,7 @@ function rollAll() {
 	// Get all the reels in the DOM
 	const reelsList = document.querySelectorAll('.reel-container > .reel');
 	// Create a new Audio object for reel sound
-	let sound = new Audio('../assets/media/Sounds/reel.mp3');
+	let sound = new Audio('https://github.com/ozz1webdev/codeproject2/blob/main/assets/media/Sounds/reel.mp3?raw=true');
 	// Play the reel sound
 	sound.play();
 
