@@ -33,7 +33,7 @@
             <p>Select a Slot Mashine to start the Game and place your bet.<br>
                 You can Bet a maximum of 3 Coins and a minimum of 1 Coin.<br>
                 If you hit 2 or 3 identical icons in a row, you win the amount you have bet.<br>
-                If you lose your coins, either continue betting coins and try again or restart the page to start over.</p>
+                If you lose your coins, either continue betting coins and try again or restart the page to start over with 20 coins.</p>
         </div>
         <img src="./assets/media/videos/casino-sign.gif" alt="Casino Sign">
         <p>Please Select a Slot Mashine to play with</p>
@@ -44,11 +44,13 @@
             <div class="homeSlot3" onclick=(startSlot3())></div>
         </div>
     </section>
+    <!-- Reel Container with 3 reels -->
     <div id="reel-container" class="reel-container">
-        <div class="reel"></div>
-        <div class="reel"></div>
-        <div class="reel"></div>
+        <div class="reel"></div> <!--reel 1-->
+        <div class="reel"></div> <!--reel 2-->
+        <div class="reel"></div> <!--reel 3-->
     </div>
+    <!-- Slot Pages -->
     <section id="slot1" class="slot1">
         <div id="slot1Theme" onclick="rollAll()">
         </div>
@@ -61,7 +63,9 @@
         <div id="slot3Theme" onclick="rollAll()">
         </div>
     </section>
-        
+    <div id="winMsg">
+        <h1>You Win!</h1>
+    </div>
     <footer>
         <!-- Linking Javascript Files -->
         <script src="./assets/js/myScript.js"></script>

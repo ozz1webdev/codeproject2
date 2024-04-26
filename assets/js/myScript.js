@@ -55,6 +55,8 @@ function rollAll() {
 	slot2Theme.onclick = "";
 	slot3Theme.onclick = "";
 
+	// Set the Win Message to none
+	winMessage.style.display = "none";
 	// Get all the reels in the DOM
 	const reelsList = document.querySelectorAll('.reel-container > .reel');
 	// Create a new Audio object for reel sound

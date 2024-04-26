@@ -6,6 +6,7 @@ var reelContainer = document.getElementById('reel-container');
 var slot1Theme = document.getElementById('slot1Theme');
 var slot2Theme = document.getElementById('slot2Theme');
 var slot3Theme = document.getElementById('slot3Theme');
+var winMessage = document.getElementById('winMsg');
 const screenWidth = window.screen.width;
 
 var sum = 20;
@@ -163,6 +164,8 @@ function setBalance(status) {
         sum = sum + bet;
         balance.innerText = 'Balance : ' + sum + ' ' +coins;
         sound.play();
+        winMessage.style.display = "block";
+        
     } 
     
     else if (status == 'lose') {
