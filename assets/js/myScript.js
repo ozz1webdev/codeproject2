@@ -57,6 +57,9 @@ function rollAll() {
 
 	// Set the Win Message to none
 	winMessage.style.display = "none";
+	winMessage2.style.display = "none";
+	winMessage3.style.display = "none";
+
 	// Get all the reels in the DOM
 	const reelsList = document.querySelectorAll('.reel-container > .reel');
 	// Create a new Audio object for reel sound

@@ -131,15 +131,19 @@ nav {
     height:180px; 
 }
 /*Win Message */
-#winMsg {
-    position: fixed;
-    margin-top: 350px;
-    margin-left: 350px;
+#winMsg, #winMsg2, #winMsg3 {
+    position: absolute;
+    margin-top: 278px;
+    margin-left: 110px;
     width: 300px;
     height: 300px;
     font-size: 30px;
     font-family: sans-serif;
     color: rgb(4, 252, 78);
     display: none;
-    z-index:3;
+    z-index:10;
+}
+#winMsg2 {
+    margin-top: 240px;
+    margin-left: 95px;
 }
